@@ -11,18 +11,18 @@ class Program
     {
         // Вводим значение числа x с клавиатуры
         Console.Write("Введите число x (x >= 100): ");
-        int x = int.Parse(Console.ReadLine());
+        int ex = int.Parse(Console.ReadLine());
 
         // Получаем вторую цифру числа x
-        int secondDigit = (x / 10) % 10;
+        int secondDigit = (ex / 10) % 10;
 
         // Зачеркиваем вторую цифру числа x
-        int newX = x / 100 * 10 + x % 10;
+        int newX = ex / 100 * 10 + ex % 10;
 
         // Получаем число n, добавляя зачеркнутую вторую цифру x в конец числа newX
-        int n = newX * 10 + secondDigit;
+        int nam = newX * 10 + secondDigit;
 
         // Выводим полученное значение числа n
-        Console.WriteLine("n = " + n);
+        Console.WriteLine("n = " + nam);
     }
 }
