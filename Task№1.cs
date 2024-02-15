@@ -14,14 +14,14 @@ class Program
     int num = int.Parse(Console.ReadLine());
     //степень числа
     Console.Write("Введите степень : ");
-    int n = int.Parse(Console.ReadLine());
+    int nam = int.Parse(Console.ReadLine());
     //число, возведенное в степень
     int num_n = 1;
-    for (int i = 0; i < n; i++)
+    for (int per = 0; i < nam; ++per)
     {
       num_n *= num;
     }
-    Console.WriteLine("{0} ^ {1} = {2}", num, n, num_n);
+    Console.WriteLine("{0} ^ {1} = {2}", num, nam, num_n);
     Console.ReadKey();
     return 0;
   }
